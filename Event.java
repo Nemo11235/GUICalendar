@@ -1,4 +1,3 @@
-
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
@@ -44,10 +43,9 @@ public class Event {
 	 * Function that prints the event in format that fits the required format for printEventList function in MyCalendar class
 	 * @param e event to print
 	 */
-	public static void printEvent(Event e) {
+	public static String printEvent(Event e) {
 		DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("E, MMM d yyyy");
-		System.out.print(" " + dateFormat.format(e.getInterval().getDate()));
-		System.out.println(" " + e.getInterval().getStartTime() + " - " + e.getInterval().getEndTime() + " " + e.getName());
+		return dateFormat.format(e.getInterval().getDate()) + " " + e.getInterval().getStartTime() + " - " + e.getInterval().getEndTime() + " " + e.getName() + "\n";
 	}
 	
 	
