@@ -3,7 +3,7 @@ import javax.swing.event.*;
 
 /**
  * (borrowed from textbook, edited)
-  A Subject class for the observer pattern.
+  A Subject class for the MVC pattern.
 */
 public class Model
 {
